@@ -82,6 +82,41 @@ Here it is! You should see a spectacular light blinking on the board.
 
 Source: [here](https://reference.digilentinc.com/learn/programmable-logic/tutorials/getting-started-with-fpga/start)
 
+## Folders
+
+`arithmetic_machines`
+
+Contains adders, subtractors, multipliers, dividers. Each type of machine has been implemented applying different alghorithms (e.g. divider with restoring and non-restoring alghoritms).
+
+## Projects
+
+Notes:
+
+* entities named as *`*_on_board.vhd`* connect the logic circuit to a 7-segments display, available on the *Nexys2* board
+* entities named as *`tb_*.vhd`* describe tests on the behavioural component
+
+### Adders
+
+`carry_ripple`: configurable ripple carry adder.
+
+PARAMETERS:
+
+* `n`: generic. Parallelism of *A* and *B*. Default 4 bit
+
+INPUT:
+
+* `A`: vector. *n* bit
+* `B`: vector. *n* bit
+* `c_in`: bit. Input carry
+
+OUTPUT:
+
+* `S`: vector. *A* + *B*
+* `c_out`: bit. Carry flag
+* `ovfl`: bit. Overflow flag
+
+---
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
