@@ -115,6 +115,23 @@ OUTPUT:
 * `c_out`: bit. Carry flag
 * `ovfl`: bit. Overflow flag
 
+`carry_lookahead`: configurable *carry lookahead* adder.
+
+PARAMETERS:
+
+* `n`: generic. Parallelism of *A* and *B*. Default 8 bit
+
+INPUT:
+
+* `A`: vector. *n* bit
+* `B`: vector. *n* bit
+* `c_in`: bit. Input carry
+
+OUTPUT:
+
+* `S`: vector. *A* + *B*
+* `ovfl`: bit. Overflow flag
+
 ---
 
 ## Contacts
