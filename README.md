@@ -149,6 +149,22 @@ OUTPUT:
 * `S`: vector. *A* + *B*
 * `ovfl`: bit. Overflow flag
 
+`carry_save`: configurable *carry save* adder.
+
+PARAMETERS:
+
+* `n`: generic. Parallelism of *A* and *B*. Default 8 bit
+
+INPUT:
+
+* `A`: vector. *n* bit
+* `B`: vector. *n* bit
+* `C`: vector. *n* bit
+
+OUTPUT:
+
+* `S`: vector. *A* + *B* + *C*
+
 ---
 
 ## Contacts
