@@ -166,6 +166,23 @@ OUTPUT:
 * `S`: vector. *A* + *B* + *C*
 
 ---
+### Multipliers
+
+`mac_mutiplier`: configurable MAC multiplier
+
+PARAMETERS
+
+* `n` parallelism of *A*. Default 8 bit
+* `m` parallelism of *B*. Default 8 bit
+
+INPUT
+
+* `A` vector. *n* bit
+* `B` vector. *m* bit
+
+OUTPUT
+
+* `P` vector. *A* * *B*
 
 ## Contacts
 
