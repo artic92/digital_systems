@@ -167,6 +167,24 @@ OUTPUT:
 
 ---
 
+### Multipliers
+
+`mac_mutiplier`: configurable MAC multiplier
+
+PARAMETERS
+
+* `n` parallelism of *A*. Default 8 bit
+* `m` parallelism of *B*. Default 8 bit
+
+INPUT
+
+* `A` vector. *n* bit
+* `B` vector. *m* bit
+
+OUTPUT
+
+* `P` vector. *A* * *B*
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
