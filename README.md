@@ -184,6 +184,22 @@ OUTPUT
 
 * `P` vector. *A* * *B*
 
+`combinatorial_mutiplier`: configurable combinatorial multiplier
+
+PARAMETERS
+
+* `n` parallelism of *A*. Default 2 bit
+* `m` parallelism of *B*. Default 2 bit
+
+INPUT
+
+* `A` vector. *n* bit
+* `B` vector. *m* bit
+
+OUTPUT
+
+* `P` vector. *A* * *B*
+
 `robertson`: configurable Robertson multiplier
 
 PARAMETERS
