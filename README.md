@@ -205,6 +205,26 @@ OUTPUT
 * `P` vector. *A* * *B*
 * `done` bit. Termination flag
 
+`booth`: configurable Booth multiplier
+
+PARAMETERS
+
+* `n` parallelism of *A*. Default 4 bit
+* `m` parallelism of *B*. Default 4 bit
+
+INPUT
+
+* `A` vector. *n* bit
+* `B` vector. *m* bit
+* `reset_n` bit. Reset signal. 0-active
+* `enable` bit. Enable signal. 1-active
+* `clock` bit. Clock signal
+
+OUTPUT
+
+* `P` vector. *A* * *B*
+* `done` bit. Termination flag
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
