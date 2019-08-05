@@ -36,6 +36,8 @@ Note: calling `apt install` installs also the dependencies of the .deb files.
 In order to execute the simulations with the *ISim* tool, it is necessary to install the C compiler. To do so, type:
 
 ```bash
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt install -y build-essential
 ```
 
