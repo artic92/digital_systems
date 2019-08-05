@@ -325,6 +325,10 @@ The goal of this exercise is to generate, from a base clock of 100 MHz and 50% d
 
 Then, phase-shift this signal of 90,180,270,360 degrees respectively.
 
+`exercise4`
+
+The goal of this exercise is to design a clock generator capable of delay a base clock of 100 MHz and 50% duty cycle. This component has to generate 4 signals, each one is the base signal but with phase displaced of 90, 180, 270, 360 degrees. The component is described in both `behavioural` and `structural` flavours.
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
