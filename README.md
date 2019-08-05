@@ -90,6 +90,10 @@ Source: [here](https://reference.digilentinc.com/learn/programmable-logic/tutori
 
 Contains adders, subtractors, multipliers, dividers. Each type of machine has been implemented applying different alghorithms (e.g. divider with restoring and non-restoring alghoritms).
 
+`clocks`
+
+This folder contains exercises regarding the generation of periodic signals (a.k.a. *clocks*).
+
 ## Projects
 
 Notes:
@@ -288,6 +292,23 @@ OUTPUT
 * `div_per_zero` bit. Division-per-zero flag
 * `Q` quotient *D/V*, vector. *n* bit
 * `R` remainder, vector. *n* bit
+
+### Clocks
+
+---
+
+`exercise1`
+
+The goal of this excercise is to generate a periodic signal employing the `after` clause and follwing the pattern:
+
+| ti    | t0 | t1 | t2 | t3 | t4 | t5  | t6  | t7  | t8  | t9  | t10 | t11 |
+|-------|----|----|----|----|----|-----|-----|-----|-----|-----|-----|-----|
+| value | 0  | 1  | 0  | 1  | 0  | 1   | 0   | 1   | 9   | 1   |  0  |  0  |
+| ns    | 0  | 25 | 35 | 50 | 75 | 105 | 110 | 155 | 175 | 195 | 235 | 280 |
+
+`exercise2`
+
+This exercise is similar to the previous one except the signal is generated using an `inverter chain`.
 
 ## Contacts
 
