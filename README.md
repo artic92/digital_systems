@@ -329,6 +329,17 @@ Then, phase-shift this signal of 90,180,270,360 degrees respectively.
 
 The goal of this exercise is to design a clock generator capable of delay a base clock of 100 MHz and 50% duty cycle. This component has to generate 4 signals, each one is the base signal but with phase displaced of 90, 180, 270, 360 degrees. The component is described in both `behavioural` and `structural` flavours.
 
+`exercise6`
+
+The goal of this exercise is to generate the following periodic signals starting from a time-base signal of 100 MHz and 50% duty cycle:
+
+1) 25 MHz and 50% duty cycle
+2) 78 MHz and 50% duty cycle
+3) 25 MHz and 70% duty cycle
+4) 78 MHz and 70% duty cycle
+
+This component should be implemented in two variants. The former should use only counters, while the latter should use the builtin **Xilinx DCM** component.
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
