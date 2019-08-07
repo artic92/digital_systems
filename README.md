@@ -310,6 +310,21 @@ The goal of this excercise is to generate a periodic signal employing the `after
 
 This exercise is similar to the previous one except the signal is generated using an `inverter chain`.
 
+`exercise3`
+
+The goal of this exercise is to generate, from a base clock of 100 MHz and 50% duty cycle, a periodic signal with the following pattern:
+
+
+| Singnal shape    | time                   | value |
+| ---------------- | ---------------------- | ------|
+| initial state    | 0                      |   0   |
+| 15 rising edge   | after 15 rising edges  |   1   |
+| 15 falling edge  | after 15 falling edges |   0   |
+| 15 falling edge  | after 15 falling edges |   1   |
+| 10 rising edge   | after 10 rising edges  |   0   |
+
+Then, phase-shift this signal of 90,180,270,360 degrees respectively.
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
