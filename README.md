@@ -340,6 +340,26 @@ The goal of this exercise is to generate the following periodic signals starting
 
 This component should be implemented in two variants. The former should use only counters, while the latter should use the builtin **Xilinx DCM** component.
 
+`exercise7`
+
+The goal of this exercise is to realise a *watch*, showing the time (hours, minutes and seconds) in binary form. The watch should generate an adeguate precision time-base upon which, through contators, realise the counting of hours, minutes and seconds. Minutes and hours are shown onto the 7-segments display while seconds onto LEDs (the four last significant bits out of the provided eight available on the *Nexys2*). The watch should be initialized through the switches.
+
+INPUT
+
+* `clock` bit. Clock signal
+* `reset_n` bit. 0-active. Reset signal
+* `enable` bit. Starts the watch if `reset_n` is 1
+* `load_m` bit. 1-active. Load the `minuti_in` value
+* `load_h` bit. 1-active. Load the `ore_in` value
+* `minuti_in` vector. 6 bit. Initial value of minutes
+* `ore_in` vector. 5 bit. Initial value of hours
+
+OUTPUT
+
+* `minuti_out` vector. 6 bit. Actual value of minutes
+* `ore_out` vector. 5 bit. Actual value of hours
+* `secondi` vector. 6 bit. Actual value of seconds
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
