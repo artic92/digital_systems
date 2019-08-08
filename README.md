@@ -268,6 +268,27 @@ OUTPUT
 * `Q` quotient *D/V*, vector. *n* bit
 * `R` remainder, vector. *n* bit
 
+`restoring`: configurable restoring divider
+
+PARAMETERS
+
+* `n` parallelism of *V*. Default 4 bit
+
+INPUT
+
+* `D` dividend, vector. *(2\*n)-1* bit
+* `V` divisor, vector. *n* bit
+* `enable` bit. 1-active. Starts the computation if `reset_n` is 1.
+* `reset_n` bit. 0-active. Reset signal
+* `clock` bit. Clock signal
+
+OUTPUT
+
+* `done` bit. End-of-computation flag
+* `div_per_zero` bit. Division-per-zero flag
+* `Q` quotient *D/V*, vector. *n* bit
+* `R` remainder, vector. *n* bit
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
