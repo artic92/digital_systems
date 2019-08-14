@@ -385,6 +385,23 @@ OUTPUT
 * `q` bit. Value stored into the latch
 * `qn` bit. NOT q
 
+`latch_rs_enabled`: fundamental RS latch with enable signal
+
+PARAMETERS
+
+* `td_time` port delay. Default 0 ns
+
+INPUT
+
+* `r` bit. 1-active. Reset signal
+* `s` bit. 1-active. Set signal
+* `enable` bit. 1-active. Enables the validity of `r` and `s`
+
+OUTPUT
+
+* `Q` bit. Value stored into the latch
+* `NQ` bit. NOT Q
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
