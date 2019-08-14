@@ -94,6 +94,10 @@ Contains adders, subtractors, multipliers, dividers. Each type of machine has be
 
 This folder contains exercises regarding the generation of periodic signals (a.k.a. *clocks*).
 
+`flip_flops`
+
+This folder contains different implementations of *flip flops*.
+
 ## Projects
 
 Notes:
@@ -359,6 +363,27 @@ OUTPUT
 * `minuti_out` vector. 6 bit. Actual value of minutes
 * `ore_out` vector. 5 bit. Actual value of hours
 * `secondi` vector. 6 bit. Actual value of seconds
+
+### Flip Flops/Latch
+
+---
+
+`latch_rs`: implementation of a fundamental latch RS
+
+PARAMETERS
+
+* `delay_nor_nand` port delay. Default 0 ns
+* `nor_nand` gates configuration. 0: NOR. 1: NAND
+
+INPUT
+
+* `r` bit. 1-active. Reset signal
+* `s` bit. 1-active. Set signal
+
+OUTPUT
+
+* `q` bit. Value stored into the latch
+* `qn` bit. NOT q
 
 ## Contacts
 
