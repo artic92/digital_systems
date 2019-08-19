@@ -426,6 +426,18 @@ OUTPUT
 * `q` bit. Value stored into the latch
 * `qn` bit. NOT q
 
+`latch_d_enabled`: D latch with enable signal
+
+INPUT
+
+* `D` bit. Data signal
+* `enable` bit. 1-active. Let the data on D be stored
+
+OUTPUT
+
+* `Q` bit. Value stored into the latch
+* `NQ` bit. NOT Q
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
