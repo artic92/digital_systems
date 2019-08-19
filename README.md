@@ -454,6 +454,22 @@ OUTPUT
 
 * `data_out` bit. Value stored into the latch after `delay` ns
 
+`flip_flop_d_structural`: D flip-flop in structural architecture
+
+PARAMETERS
+
+* `rising_falling`: clock edge sensitivity. 0: *rising edge*. 1: *falling edge*
+
+INPUT
+
+* `d` bit. Data signal
+* `clock` bit. Clock signal
+
+OUTPUT
+
+* `q` bit. Value stored into the latch
+* `qn` bit. NOT Q
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
