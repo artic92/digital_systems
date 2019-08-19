@@ -470,6 +470,22 @@ OUTPUT
 * `q` bit. Value stored into the latch
 * `qn` bit. NOT Q
 
+`flip_flop_d_dataflow`: D flip-flop in dataflow architecture
+
+PARAMETERS
+
+* `td`: flip-flop storing delay
+
+INPUT
+
+* `D` bit. Data signal
+* `C` bit. Clock signal
+
+OUTPUT
+
+* `Q` bit. Value stored into the latch
+* `NQ` bit. NOT Q
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
