@@ -438,6 +438,22 @@ OUTPUT
 * `Q` bit. Value stored into the latch
 * `NQ` bit. NOT Q
 
+`flip_flop_d_behavioral`: D flip-flop in behavioral architecture
+
+PARAMETERS
+
+* `delay`: flip-flop storing delay
+
+INPUT
+
+* `data_in` bit. Data signal
+* `reset_n` bit. 0-active. Put the flip-flop in reset state
+* `clock` bit. Clock signal
+
+OUTPUT
+
+* `data_out` bit. Value stored into the latch after `delay` ns
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
