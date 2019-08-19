@@ -415,6 +415,17 @@ OUTPUT
 * `Q` bit. Value stored into the latch
 * `NQ` bit. NOT Q
 
+`latch_d`: implementation of a D latch with fundamental latch RS
+
+INPUT
+
+* `d` bit. Data signal
+
+OUTPUT
+
+* `q` bit. Value stored into the latch
+* `qn` bit. NOT q
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
