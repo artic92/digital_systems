@@ -402,6 +402,19 @@ OUTPUT
 * `Q` bit. Value stored into the latch
 * `NQ` bit. NOT Q
 
+`rs_master_slave`: fundamental RS in a master-slave configuration
+
+INPUT
+
+* `R` bit. 1-active. Reset signal
+* `S` bit. 1-active. Set signal
+* `clock` bit. Clock signal
+
+OUTPUT
+
+* `Q` bit. Value stored into the latch
+* `NQ` bit. NOT Q
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
