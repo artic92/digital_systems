@@ -98,6 +98,10 @@ This folder contains exercises regarding the generation of periodic signals (a.k
 
 This folder contains different implementations of *flip flops*.
 
+`flip_flops/latch_flip_flops_schematics`
+
+This folder contains several examples of *flip flops* generated through the schematic design feature offered by ISE.
+
 ## Projects
 
 Notes:
