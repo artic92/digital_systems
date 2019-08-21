@@ -74,3 +74,8 @@ isim/
 *.log
 *.wdb
 *.xmsgs
+
+# schematics generated files
+sch2HdlBatchFile
+*.jhd
+*.vhf
