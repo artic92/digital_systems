@@ -1,2 +1,5 @@
 *.cf
 *.vcd
+html/
+latex/
+vhdl/
