@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Jul 29 12:43:36 2020
+[*]
+[dumpfile] "/home/ariccio/digital_systems/basic_components/register/tb_register_n_bit.ghw"
+[dumpfile_mtime] "Wed Jul 29 12:43:11 2020"
+[dumpfile_size] 961
+[savefile] "/home/ariccio/digital_systems/basic_components/register/tb_register_n_bit.gtkw"
+[timestart] 4900000
+[size] 1920 1023
+[pos] -1 -1
+*-26.000000 200000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb_register_n_bit.
+[sst_width] 208
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@420
+top.tb_register_n_bit.tb_terminate
+@28
+top.tb_register_n_bit.tb_clock
+top.tb_register_n_bit.tb_reset_n
+top.tb_register_n_bit.i[0]
+@29
+top.tb_register_n_bit.uut.load
+@28
+top.tb_register_n_bit.o[0]
+[pattern_trace] 1
+[pattern_trace] 0
