@@ -19,9 +19,9 @@ entity counter_modulo_n is
 	port (
 		clock      : in  std_logic; --! system clock
 		reset_n    : in  std_logic; --! 0-active asynchronous reset
+      up_down    : in  std_logic; --! when 0 counts upwards, when 1 counts backwards, it impacts the reset count value
 		count_en   : in  std_logic; --! 1-active, when asserted start the count
-      up_down    : in  std_logic; --! when 0 counts upwards, when 1 counts backwards
-		count_load : in  std_logic; --! 1-active, when asserted triggers latches the couting value on count_in
+		count_load : in  std_logic; --! 1-active, when asserted latches the counting value on count_in, it has more priority than count_en
 		count_in   : in  std_logic_vector ((natural(ceil(log2(real(n)))))-1 downto 0); --! value from which start to count (default is 0)
       count_out  : out std_logic_vector ((natural(ceil(log2(real(n)))))-1 downto 0); --! value of the actual count
       count_hit  : out std_logic); --! when asserted indicates the counter has reached the configured modulo
