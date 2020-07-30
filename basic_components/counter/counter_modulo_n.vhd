@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 --! @file counter_modulo_n.vhd
 --! @author Antonio Riccio
---! @brief Configurable counter
+--! @brief Description of a configurable counter
 --! @version 1.0
 --! @date 13:49:26 12/20/2015
 --! @copyright GNU Public License
