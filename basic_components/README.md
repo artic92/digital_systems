@@ -48,6 +48,26 @@ make wave
 
 Enjoy!
 
+## Components
+
+`memory_cell`: memory block of configurable parallelism.
+
+PARAMETERS:
+
+* `n`: generic. Parallelism of the memory. Default 1 bits
+* `delay`: generic. Delay after which output changes when input changes and memory is in transparency (load asserted)
+
+INPUT:
+
+* `clock`: bit. System clock
+* `async_reset_n`: bit, 0-active asynchronous reset
+* `load`: bit, 1-active synchronous load
+* `I`: vector, *n* bit, data to store
+
+OUTPUT:
+
+* `O`: vector, *n* bit, stored data
+
 ## Contacts
 
 Antonio Riccio <antonio.riccio.27@gmail.com>
