@@ -1,0 +1,2 @@
+DEPS=register_n_bit_pkg.vhd register_n_bit.vhd tb_register_n_bit.vhd
+TB_ENTITY_NAME=tb_register_n_bit

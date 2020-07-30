@@ -1,7 +1,9 @@
+COMPONENT=register
+WORKDIR=./
 GHDL_OPTS=--ieee=synopsys
+GHDL_OPTS+=--workdir=${WORKDIR}
 
-TOP_LEVEL=tb_register_n_bit
-DEPS=register_n_bit_pkg.vhd register_n_bit.vhd tb_register_n_bit.vhd
+include ${WORKDIR}/${COMPONENT}.mk
 
 all: analyse run
 
@@ -9,13 +11,11 @@ analyse: ${DEPS}
 	@ghdl -a ${GHDL_OPTS} $?
 
 run:
-	@ghdl -r ${GHDL_OPTS} ${TOP_LEVEL} --wave=${TOP_LEVEL}.ghw
+	@ghdl -r ${GHDL_OPTS} ${TB_ENTITY_NAME} --wave=${TB_ENTITY_NAME}.ghw
 
 wave:
-	@gtkwave ${TOP_LEVEL}.ghw ${TOP_LEVEL}.gtkw
+	@gtkwave ${WORKDIR}/${TB_ENTITY_NAME}.ghw ${WORKDIR}/${TB_ENTITY_NAME}.gtkw &
 
 clean:
 	@-ghdl --remove
-	@-rm *.cf
 	@-rm *.ghw
-
