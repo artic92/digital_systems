@@ -3,7 +3,7 @@
 --! @author Antonio Riccio
 --! @brief Description of a configurable memory block
 --! @version 1.0
---! @date 13:49:26 12/20/2015
+--! @date 18:03:04 11/07/2015
 --! @copyright GNU Public License
 ----------------------------------------------------------------------------------
 library ieee;
