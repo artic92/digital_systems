@@ -1,3 +1,11 @@
+----------------------------------------------------------------------------------
+--! @file register_n_bit.vhd
+--! @author Antonio Riccio
+--! @brief Description of a configurable memory block
+--! @version 1.0
+--! @date 13:49:26 12/20/2015
+--! @copyright GNU Public License
+----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 
