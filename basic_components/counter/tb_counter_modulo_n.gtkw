@@ -1,34 +1,32 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Thu Jul 30 09:18:56 2020
+[*] Thu Jul 30 10:54:54 2020
 [*]
 [dumpfile] "/home/ariccio/digital_systems/basic_components/counter/tb_counter_modulo_n.ghw"
-[dumpfile_mtime] "Thu Jul 30 09:18:42 2020"
-[dumpfile_size] 1828
+[dumpfile_mtime] "Thu Jul 30 10:53:26 2020"
+[dumpfile_size] 2908
 [savefile] "/home/ariccio/digital_systems/basic_components/counter/tb_counter_modulo_n.gtkw"
 [timestart] 0
-[size] 1910 1023
+[size] 1920 1023
 [pos] -1 -1
-*-27.429268 230000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-28.429268 230000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.tb_counter_modulo_n.
 [sst_width] 208
-[signals_width] 189
+[signals_width] 172
 [sst_expanded] 1
 [sst_vpaned_height] 291
 @28
 top.tb_counter_modulo_n.tb_clock
 top.tb_counter_modulo_n.tb_reset_n
-@420
-top.tb_counter_modulo_n.tb_terminate
-@28
-top.tb_counter_modulo_n.count_en
 top.tb_counter_modulo_n.up_down
+top.tb_counter_modulo_n.count_en
 top.tb_counter_modulo_n.count_load
 @22
 #{top.tb_counter_modulo_n.count_in[3:0]} top.tb_counter_modulo_n.count_in[3] top.tb_counter_modulo_n.count_in[2] top.tb_counter_modulo_n.count_in[1] top.tb_counter_modulo_n.count_in[0]
+@23
 #{top.tb_counter_modulo_n.count_out[3:0]} top.tb_counter_modulo_n.count_out[3] top.tb_counter_modulo_n.count_out[2] top.tb_counter_modulo_n.count_out[1] top.tb_counter_modulo_n.count_out[0]
-@29
+@28
 top.tb_counter_modulo_n.uut.count_hit
 [pattern_trace] 1
 [pattern_trace] 0
