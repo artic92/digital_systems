@@ -1,0 +1,2 @@
+DEPS=memory_cell_pkg.vhd memory_cell.vhd tb_memory_cell.vhd
+TB_ENTITY_NAME=tb_memory_cell

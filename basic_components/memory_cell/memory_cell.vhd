@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
---! @file register_n_bit.vhd
+--! @file memory_cell.vhd
 --! @author Antonio Riccio
---! @brief Description of a configurable memory block
+--! @brief Description of a configurable memory cell
 --! @version 1.0
 --! @date 18:03:04 11/07/2015
 --! @copyright GNU Public License
@@ -9,7 +9,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity register_n_bit is
+entity memory_cell is
 	generic (
 		n 						: natural;                              --! parallelism of the block
 		delay 				: time);                                --! delay after which output changes when input changes and register is in transparency (load asserted)
@@ -19,9 +19,9 @@ entity register_n_bit is
       load 					: in   std_logic; 							 --! 1-active, synchronous load
 		I 						: in   std_logic_vector(n-1 downto 0);  --! data to store, n bits
 		O						: out  std_logic_vector(n-1 downto 0)); --! data stored, n bits
-end register_n_bit;
+end memory_cell;
 
-architecture behavioral of register_n_bit is
+architecture behavioral of memory_cell is
 
 begin
 

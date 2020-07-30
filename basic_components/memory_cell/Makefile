@@ -1,4 +1,4 @@
-COMPONENT=register
+COMPONENT=memory_cell
 WORKDIR=./
 GHDL_OPTS=--ieee=synopsys
 GHDL_OPTS+=--workdir=${WORKDIR}

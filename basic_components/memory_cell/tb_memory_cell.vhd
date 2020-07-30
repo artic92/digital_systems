@@ -2,12 +2,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.register_n_bit_pkg.all;
+use work.memory_cell_pkg.all;
 
-entity tb_register_n_bit is
+entity tb_memory_cell is
 end entity;
 
-architecture tb of tb_register_n_bit is
+architecture tb of tb_memory_cell is
 
    -- assuming 50 MHz system clock
    constant TB_CLK_PERIOD     : time := 20 ns;
@@ -19,10 +19,10 @@ architecture tb of tb_register_n_bit is
 
    -- uut signals
    signal load                : std_logic;
-   signal I                   : std_logic_vector(register_parallelism_bit-1 downto 0);
-   signal O                   : std_logic_vector(register_parallelism_bit-1 downto 0);
+   signal I                   : std_logic_vector(memory_cell_parallelism_bit-1 downto 0);
+   signal O                   : std_logic_vector(memory_cell_parallelism_bit-1 downto 0);
 
-   component register_n_bit is
+   component memory_cell is
       generic (
          n 						: natural;
          delay 				: time);
@@ -36,10 +36,10 @@ architecture tb of tb_register_n_bit is
 
 begin
 
-   uut : register_n_bit
+   uut : memory_cell
       generic map (
-         n     => register_parallelism_bit,
-         delay => register_parallelism_delay)
+         n     => memory_cell_parallelism_bit,
+         delay => memory_cell_parallelism_delay)
       port map (
          clock         => tb_clock,
          async_reset_n => tb_reset_n,
